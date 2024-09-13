@@ -5,7 +5,6 @@
   --font-size-medium: 16px;
   --font-size-small: 14px;
   --font-weight: 700;
-  --main-font-family: Avenir LT Std;
 }
 .main {
   width: 100%;
@@ -21,7 +20,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  /* height: 347px; */
   box-shadow: 0px 1px 4.2px 2px #0000000d;
 }
 .headText {
@@ -44,6 +42,37 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+.inputField {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: none;
+  padding-left: 10px;
+}
+
+.dropdown {
+  list-style: none;
+  margin: 5px 0 0;
+  padding: 0;
+  width: 22rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 8px 24px 0px #0000001a inset;
+  top: 3.8rem;
+  left: 1rem;
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
 .inputElement {
   padding: 0.625rem 1rem;
   display: flex;
@@ -54,7 +83,6 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 8px 24px 0px #0000001a inset;
-  /* box-shadow: 2px 3px 4.7px 1px #0000000f; */
 }
 .location {
   display: flex;
@@ -71,4 +99,18 @@
   color: var(--primary-color);
   border-radius: 6.25rem;
   background-color: var(--secondary-color);
+}
+.submit:hover {
+  background-color: #dee0e2;
+  color: #000;
+}
+.hiddenDateInput {
+  position: absolute;
+  top: -1000px; /* Moves the input off-screen */
+  left: -1000px;
+}
+.datePicker{
+  border: none;
+  outline: none;
+  background: none;
 }
